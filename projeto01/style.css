@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    font-family:monospace ;
+}
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background-color:#58094F ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.left-login > h1{
+    color: #f3aa20; ;
+    font-size: 2vw;
+}
+.left-login-image{
+    width: 35vw;
+}
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-login {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background:#841e62 ;
+    border-radius: 70px;
+    box-shadow: 0px 10px 40px;
+}
+.card-login >h2 {
+    color: #f3aa20;
+    font-weight: 800;
+    margin: 0;
+    text-transform: uppercase;
+}
+.text-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+    margin: 15px 0px;
+}
+.text-field >input{
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    background: #6b194e;
+    color: #f3aa20;
+    font-size: 10pt ;
+    outline: none;
+    box-sizing: border-box;
+}
+.text-field > label{
+    color: bisque;
+    margin-bottom: 10px;
+}
+.text-field > input ::placeholder{
+    color: bisque;
+}
+.btn-login {
+    width: 100px;
+    padding: 5px 0px;
+    margin: 20px;
+    border: none;
+    border-radius: 70px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #58094F;
+    background-color:#f3aa20;
+    cursor: pointer;
+}
+@media only screen and (max-width: 950px){
+    .card-login{
+        width: 55%;
+    }
+}
+@media only screen and (max-width:600px){
+    .main-login{
+        flex-direction: column;
+    }
+        .left-login{
+        width: 100%;
+        height: auto;
+    }
+    .rigth-login{
+        width: 100%;
+        height: auto;
+    }
+    .left-login-image{
+      width: 60vw;
+
+    }
+    .left-login >h1{
+        font-size: large;
+    }
+}
+
+
