@@ -1,0 +1,143 @@
+/*Se quiser adicionar uma fonte diferente das que o VS Code disponibiliza, basta copiar aqui o link de importação dela, e dps definir onde ela vai ser utilizada.*/
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+   font-family: monospace;
+}
+:root {
+    --branco:#ffffff;
+    --cinza:#c4c4c4;
+    --bege:#F1E0D6;
+    --bege-escuro: #bf988f;
+    --marrom:#583e2e;
+    --roxo:#595775;
+    --roxo-claro:#aba6bf;
+    --roxo-escuro:#46427a;
+    --preto:#000000;
+       
+}
+.main {
+    display: flex;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    min-height: 100vh;
+    padding: clamp(35px, 8%, 70px
+    );
+}
+.Login_logo{
+    width: 130px;
+    margin-bottom: 80px;
+}
+.Login_title{
+    color: rgb(34, 34, 133);
+    font-size: 1.5em;
+}
+.Login_label{
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    margin: 15px;
+}
+.input{
+    width: 100%;
+    background-color:#c4c4c4;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 0.9em;
+    padding: 20px 10px 10px;
+    font-weight: 600;
+    color:rgb(34, 34, 133) ;
+
+}
+.Login_label> span{
+    position: relative;
+    font-size: 0.8em;
+    font-weight: 700;
+    color: rgb(34, 34, 133);
+    margin: 20px;
+    cursor: text;
+    transition: all 200ms ease;
+}
+.input:focus{
+    background-color: var(--bege);
+    border: 2px solid var(--cinza);
+}
+.Login_label.span_actve{
+    font-size: 0.7em;
+    margin: 8px 10px;
+}
+.Login_icons{
+    display: flex;
+   gap: 10px;
+   width: 50%;
+   margin-top: 20px;
+}
+.Login_icons img {
+    width: 20px;
+}
+.icons_button {
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    border-radius: 10%;
+    cursor: pointer ;
+    border: none;
+    background-color:#c4c4c4;
+}
+.Login_label--checkbox{
+    width: 100%;
+    margin: 15px 0 50px;
+    font-size: 0.9em;
+    font-weight: 500;
+    display:flex ;
+    align-items: center;
+}
+.Login_label--checkbox {
+     margin-right: 9px;
+    border-radius: 5px;
+    width: 20px;
+    height: 20px
+}
+.Login_button img{
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    background-color: #c4c4c4;
+    border-radius: 20px;
+    border: none;
+    
+}
+.Login_button img {
+    fill: #ffffff;
+}
+
+.Login_button:disabled{
+    cursor: auto;
+    background-color:#ffffff;
+    border: 2px solid #c4c4c4;
+}
+.Login_button:disabled img {
+    fill: var(--cinza)
+}
+.wallpaper{
+    width: 100%;
+    height: 500px;
+    background-image: url(https://doity.com.br//media/doity/eventos/evento-52735-banner.png); 
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
